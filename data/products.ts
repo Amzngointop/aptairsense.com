@@ -174,7 +174,7 @@ export const products: Product[] = [
     rank: 1,
     asin: "PLACEHOLDER",
     imageUrl: "https://m.media-amazon.com/images/I/61NC-Fh+pZL._AC_SL1500_.jpg",
-    affiliateLink: `https://www.amazon.com/Dehumidifiers-TABYIK-Dehumidifier-Bedroom-Bathroom/?tag=${AFFILIATE_TAG}`,
+    affiliateLink: "https://www.amazon.com/Dehumidifiers-TABYIK-Dehumidifier-Bedroom-Bathroom/dp/B09TSZTMZ2?th=1&linkCode=ll2&tag=aptairsense-20&linkId=c1a4b1aa18408030c051017b557b9e21&language=en_US&ref_=as_li_ss_tl",
     bestFor: "Best Small Bedroom Dehumidifier",
     pros: [
       "Quiet operation ideal for bedrooms and bathrooms",
@@ -216,7 +216,7 @@ export const products: Product[] = [
     rank: 3,
     asin: "B0FJQKQYWS",
     imageUrl: "https://m.media-amazon.com/images/I/71a9bVWRb3L._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0FJQKQYWS"),
+    affiliateLink: "https://www.amazon.com/NeedDuck-Dehumidifier-Dehumidifiers-Portable-Bathroom/dp/B0F5BG4LQ3?&linkCode=ll2&tag=aptairsense-20&linkId=5253a4b2fbfd21b545d560e8e46862d1&language=en_US&ref_=as_li_ss_tl",
     bestFor: "Best Mid-Size with LED Accent Lighting",
     pros: [
       "95 oz tank capacity reduces manual emptying frequency",
@@ -236,7 +236,7 @@ export const products: Product[] = [
     rank: 4,
     asin: "B0B5V2YZPZ",
     imageUrl: "https://m.media-amazon.com/images/I/5161M4CU28L._SL1500_.jpg",
-    affiliateLink: mkLink("B0B5V2YZPZ"),
+    affiliateLink: "https://www.amazon.com/Dehumidifier-Dehumidifiers-Dehumidification-Adjustable-Protection/dp/B0DR26KDBG?&linkCode=ll2&tag=aptairsense-20&linkId=5d35ee10c6fb1392e8975859776b283a&language=en_US&ref_=as_li_ss_tl",
     bestFor: "Best Large-Capacity for Damp Basements",
     pros: [
       "80-pint daily capacity handles large damp spaces effectively",
