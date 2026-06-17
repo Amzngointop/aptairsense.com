@@ -218,7 +218,7 @@ export default function HomePageClient() {
               </p>
               <div style={{ marginTop: "1.5rem" }}>
                 <a
-                  href="https://www.amazon.com/dp/B0DT1MGCKK?tag=YOURTAG-20"
+                  href="https://www.amazon.com/Kidde-Monoxide-Detector-Test-Reset-Indicator/dp/B0DT1MGCKK?th=1&linkCode=ll2&tag=aptairsense-20&linkId=66eb4386925faf320ed25a68c60359c5&language=en_US&ref_=as_li_ss_tl"
                   target="_blank"
                   rel="noopener noreferrer sponsored"
                   className="btn-primary"

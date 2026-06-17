@@ -16,10 +16,6 @@ export interface Product {
   badge?: BadgeType;
 }
 
-const AFFILIATE_TAG = "YOURTAG-20";
-const mkLink = (asin: string) =>
-  `https://www.amazon.com/dp/${asin}?tag=${AFFILIATE_TAG}`;
-
 export const products: Product[] = [
   // ─── CATEGORY 1: best-carbon-monoxide-detectors ──────────────────────────
   {
@@ -29,7 +25,7 @@ export const products: Product[] = [
     rank: 1,
     asin: "B0DT1MGCKK",
     imageUrl: "https://m.media-amazon.com/images/I/717SCEOQCDL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0DT1MGCKK"),
+    affiliateLink: 'https://www.amazon.com/Kidde-Monoxide-Detector-Test-Reset-Indicator/dp/B0DT1MGCKK?th=1&linkCode=ll2&tag=aptairsense-20&linkId=66eb4386925faf320ed25a68c60359c5&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Battery-Powered CO Detector",
     pros: [
       "No wiring or outlet needed — place anywhere in the home",
@@ -50,7 +46,7 @@ export const products: Product[] = [
     rank: 2,
     asin: "B000ND74XA",
     imageUrl: "https://m.media-amazon.com/images/I/51RBX7hitxL._AC_SL1200_.jpg",
-    affiliateLink: mkLink("B000ND74XA"),
+    affiliateLink: 'https://www.amazon.com/First-Alert-CO605-Monoxide-Detector/dp/B000ND74XA?th=1&linkCode=ll2&tag=aptairsense-20&linkId=ce79f09b68e73ff091209067156d6d67&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Plug-In CO Detector with Battery Backup",
     pros: [
       "Plug-in convenience with AA battery backup during power outages",
@@ -71,7 +67,7 @@ export const products: Product[] = [
     rank: 3,
     asin: "B0DT1MYBNV",
     imageUrl: "https://m.media-amazon.com/images/I/71EIUICeeRL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0DT1MYBNV"),
+    affiliateLink: 'https://www.amazon.com/Kidde-Monoxide-Detector-Battery-Test-Hush/dp/B0DT1MYBNV?th=1&linkCode=ll2&tag=aptairsense-20&linkId=54d6774cfb06b9675489b81c7f014f50&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Plug-In with Backup and Test-Hush",
     pros: [
       "Plug-in primary power with battery backup for outages",
@@ -91,7 +87,7 @@ export const products: Product[] = [
     rank: 4,
     asin: "B004Y6V5CI",
     imageUrl: "https://m.media-amazon.com/images/I/71Q2PU+ZWVL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B004Y6V5CI"),
+    affiliateLink: 'https://www.amazon.com/Kidde-Battery-Operated-Monoxide-KN-Copp-B-LPM/dp/B004Y6V5CI?th=1&linkCode=ll2&tag=aptairsense-20&linkId=89060101dee6e787b4944d6b5d8e9616&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Budget Battery CO Detector",
     pros: [
       "Affordable entry-level protection with AA battery power",
@@ -112,7 +108,7 @@ export const products: Product[] = [
     rank: 5,
     asin: "B0G1C86M5S",
     imageUrl: "https://m.media-amazon.com/images/I/61YcVRGZYAL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0G1C86M5S"),
+    affiliateLink: 'https://www.amazon.com/Kidde-Monoxide-Detector-Indicators-COPD/dp/B0G1C86M5S?th=1&linkCode=ll2&tag=aptairsense-20&linkId=6b2e44ee5fe6dd30006c849ed76108cc&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best with Digital CO Concentration Display",
     pros: [
       "Digital backlit display shows exact CO concentration in ppm",
@@ -132,7 +128,7 @@ export const products: Product[] = [
     rank: 6,
     asin: "B000Q5VMKG",
     imageUrl: "https://m.media-amazon.com/images/I/51Gpdw7wAdL._AC_SL1200_.jpg",
-    affiliateLink: mkLink("B000Q5VMKG"),
+    affiliateLink: 'https://www.amazon.com/First-Alert-CO615-Dual-Power-Monoxide/dp/B000Q5VMKG?th=1&linkCode=ll2&tag=aptairsense-20&linkId=847b60db1cf135f1a50bcd6b0f83227f&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Dual-Power with Digital PPM Readout",
     pros: [
       "Dual-power (plug-in + battery backup) with digital PPM display",
@@ -152,7 +148,7 @@ export const products: Product[] = [
     rank: 7,
     asin: "B011O2WW1C",
     imageUrl: "https://m.media-amazon.com/images/I/61DYZ1AjmOL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B011O2WW1C"),
+    affiliateLink: 'https://www.amazon.com/First-Alert-Monoxide-Temperature-CO710/dp/B011O2WW1C?th=1&linkCode=ll2&tag=aptairsense-20&linkId=24083456c20857f1da7af79b0c80eaf5&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Long-Life 10-Year Battery CO Detector",
     pros: [
       "10-year sealed battery eliminates battery replacement for the life of the unit",
@@ -172,7 +168,7 @@ export const products: Product[] = [
     name: "TABYIK 35 OZ Small Dehumidifier for Bedroom, Quiet with Auto Shut Off, 280 sq.ft, White",
     articleSlug: "best-dehumidifiers-apartment",
     rank: 1,
-    asin: "PLACEHOLDER",
+    asin: "B09TSZTMZ2",
     imageUrl: "https://m.media-amazon.com/images/I/61NC-Fh+pZL._AC_SL1500_.jpg",
     affiliateLink: "https://www.amazon.com/Dehumidifiers-TABYIK-Dehumidifier-Bedroom-Bathroom/dp/B09TSZTMZ2?th=1&linkCode=ll2&tag=aptairsense-20&linkId=c1a4b1aa18408030c051017b557b9e21&language=en_US&ref_=as_li_ss_tl",
     bestFor: "Best Small Bedroom Dehumidifier",
@@ -195,7 +191,7 @@ export const products: Product[] = [
     rank: 2,
     asin: "B0D1C6HWFF",
     imageUrl: "https://m.media-amazon.com/images/I/61Rb8OrhWML._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0D1C6HWFF"),
+    affiliateLink: 'https://www.amazon.com/Dehumidifier-AEOCKY-Compressor-Intelligent-Humidistat/dp/B0D1C6HWFF?th=1&linkCode=ll2&tag=aptairsense-20&linkId=c18a199e1008a857718be7c12145dbc7&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best High-Capacity Energy Star Dehumidifier",
     pros: [
       "Energy Star certified for efficient large-space dehumidification",
@@ -209,44 +205,50 @@ export const products: Product[] = [
     sensors: ["Humidity"],
     badge: "Top Rated",
   },
-  {
-    id: "tolife-95oz-led",
-    name: "ToLife Dehumidifier 95 OZ Water Tank, 1000 sq.ft, Auto Shut Off, 7 Colors LED, Grey",
-    articleSlug: "best-dehumidifiers-apartment",
-    rank: 3,
-    asin: "B0FJQKQYWS",
-    imageUrl: "https://m.media-amazon.com/images/I/71a9bVWRb3L._AC_SL1500_.jpg",
-    affiliateLink: "https://www.amazon.com/NeedDuck-Dehumidifier-Dehumidifiers-Portable-Bathroom/dp/B0F5BG4LQ3?&linkCode=ll2&tag=aptairsense-20&linkId=5253a4b2fbfd21b545d560e8e46862d1&language=en_US&ref_=as_li_ss_tl",
-    bestFor: "Best Mid-Size with LED Accent Lighting",
-    pros: [
-      "95 oz tank capacity reduces manual emptying frequency",
-      "7-color LED ambient light adds a decorative touch",
-      "Auto shut-off prevents overflow when tank is full",
-    ],
-    cons: [
-      "LED light is aesthetic-only and not functionally relevant",
-      "Coverage area limited to 1000 sq ft",
-    ],
+{
+  id: "small-44oz-auto-defrost-led",
+  name: "Dehumidifier for Home Small Quiet Dehumidifiers for 44OZ Water Tank Auto Defrost and Shutoff 10 Colors Light 4 Timer Options 3 Modes Portable Dehumidifiers for Bedroom Bathroom Closet RV",
+  articleSlug: "best-dehumidifiers-apartment",
+  rank: 3,
+  asin: "B0F5BG4LQ3",
+  imageUrl: "https://m.media-amazon.com/images/I/6135JhqNHjL._AC_SL1200_.jpg",
+  affiliateLink: "https://www.amazon.com/NeedDuck-Dehumidifier-Dehumidifiers-Portable-Bathroom/dp/B0F5BG4LQ3?&linkCode=ll2&tag=aptairsense-20&linkId=5253a4b2fbfd21b545d560e8e46862d1&language=en_US&ref_=as_li_ss_tl",
+  bestFor: "Best Compact Dehumidifier for Bedrooms, Closets, and RVs",
+  pros: [
+    "44 oz water tank is practical for small rooms, bathrooms, closets, and RV spaces",
+    "Auto shut-off protection helps prevent overflow when the tank is full",
+    "Auto defrost function supports more reliable use in cooler conditions",
+    "Quiet operation makes it suitable for bedrooms and nighttime use",
+    "10-color light, 4 timer options, and 3 modes add flexible daily convenience"
+  ],
+  cons: [
+    "Not suitable for large rooms, basements, or heavy moisture problems",
+    "44 oz tank may require more frequent emptying in very humid spaces",
+    "LED lighting is mostly decorative rather than performance-related"
+  ],
     sensors: ["Humidity"],
   },
-  {
-    id: "waykar-80pint-energy-star",
-    name: "Waykar 80 Pints Energy Star Dehumidifier, Up to 5000 Sq.Ft, with Drain Hose",
-    articleSlug: "best-dehumidifiers-apartment",
-    rank: 4,
-    asin: "B0B5V2YZPZ",
-    imageUrl: "https://m.media-amazon.com/images/I/5161M4CU28L._SL1500_.jpg",
-    affiliateLink: "https://www.amazon.com/Dehumidifier-Dehumidifiers-Dehumidification-Adjustable-Protection/dp/B0DR26KDBG?&linkCode=ll2&tag=aptairsense-20&linkId=5d35ee10c6fb1392e8975859776b283a&language=en_US&ref_=as_li_ss_tl",
-    bestFor: "Best Large-Capacity for Damp Basements",
-    pros: [
-      "80-pint daily capacity handles large damp spaces effectively",
-      "Energy Star rated for lower operating costs",
-      "Continuous drain hose included for unattended long-term operation",
-    ],
-    cons: [
-      "Large unit size may not suit small apartment footprints",
-      "Compressor noise audible during operation",
-    ],
+{
+  id: "1657ml-58oz-small-dehumidifier",
+  name: "Dehumidifier 1657ML 58OZ Small Dehumidifier for Home 230 Ft² Safety Dehumidifiers Adjustable 10 Color Lights 5 Timers 3 Setting Modes Auto Shut Off Protection Low Noise For Bedroom Bathroom",
+  articleSlug: "best-dehumidifiers-apartment",
+  rank: 4,
+  asin: "B0DR26KDBG",
+  imageUrl: "https://m.media-amazon.com/images/I/615aoklcD7L._AC_SL1200_.jpg",
+  affiliateLink: "https://www.amazon.com/Dehumidifier-Dehumidifiers-Dehumidification-Adjustable-Protection/dp/B0DR26KDBG?&linkCode=ll2&tag=aptairsense-20&linkId=5d35ee10c6fb1392e8975859776b283a&language=en_US&ref_=as_li_ss_tl",
+  bestFor: "Best Compact Dehumidifier for Bedrooms and Bathrooms",
+  pros: [
+    "Compact 1657ML / 58OZ water tank suits small rooms up to 230 sq.ft.",
+    "Auto shut-off protection helps prevent overflow when the tank is full",
+    "Low-noise operation makes it suitable for bedrooms, bathrooms, and small home spaces",
+    "Five timer options and three working modes offer flexible daily use",
+    "Adjustable 10-color lights can work as a soft night-light feature"
+  ],
+  cons: [
+    "Not designed for large basements or high-humidity whole-home coverage",
+    "Small tank may need more frequent emptying in very damp rooms",
+    "Performance is better for light moisture control than heavy-duty dehumidification"
+  ],
     sensors: ["Humidity"],
   },
   {
@@ -256,7 +258,7 @@ export const products: Product[] = [
     rank: 5,
     asin: "B0G4G65PYS",
     imageUrl: "https://m.media-amazon.com/images/I/61cWhHK+CPL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0G4G65PYS"),
+    affiliateLink: 'https://www.amazon.com/NineSky-Dehumidifier-Dehumidifiers-Basement-Bathroom/dp/B0G4G65PYS?th=1&linkCode=ll2&tag=aptairsense-20&linkId=2b210dc96813f578fa795224208b6a74&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best for Bathrooms and Bedrooms",
     pros: [
       "7-color ambient light doubles as a night light",
@@ -276,7 +278,7 @@ export const products: Product[] = [
     rank: 6,
     asin: "B0DX7GQSP5",
     imageUrl: "https://m.media-amazon.com/images/I/61LwmQI+m4L._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0DX7GQSP5"),
+    affiliateLink: 'https://www.amazon.com/hOmeLabs-Pint-Wi-Fi-Dehumidifier-Rooms/dp/B0DX7GQSP5?th=1&linkCode=ll2&tag=aptairsense-20&linkId=e8a29e053f6ba86f395137154c751c66&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Wi-Fi Smart Dehumidifier",
     pros: [
       "Wi-Fi connectivity enables remote monitoring and control via app",
@@ -297,7 +299,7 @@ export const products: Product[] = [
     rank: 7,
     asin: "B07NRDBBH5",
     imageUrl: "https://m.media-amazon.com/images/I/61xyRWKTTYL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B07NRDBBH5"),
+    affiliateLink: 'https://www.amazon.com/MIDEA-MAD30C1YWS-Portable-Dehumidifier-basements/dp/B07NRDBBH5?th=1&linkCode=ll2&tag=aptairsense-20&linkId=59f4d088898def78644fcb0a84678b6b&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Budget Energy Star Dehumidifier",
     pros: [
       "Energy Star certified for efficient moisture removal",
@@ -319,7 +321,7 @@ export const products: Product[] = [
     rank: 1,
     asin: "B0CJLB54LS",
     imageUrl: "https://m.media-amazon.com/images/I/71qT3QSo2EL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0CJLB54LS"),
+    affiliateLink: 'https://www.amazon.com/First-Alert-SMI100-Battery-Operated-1-Pack/dp/B0CJLB54LS?th=1&linkCode=ll2&tag=aptairsense-20&linkId=3da4a2c757720b34468367f6eb008304&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Battery Smoke Alarm Multi-Pack",
     pros: [
       "Ionization sensor for fast detection of fast-flaming fires",
@@ -340,7 +342,7 @@ export const products: Product[] = [
     rank: 2,
     asin: "B0CJMN3443",
     imageUrl: "https://m.media-amazon.com/images/I/61zYUADll+L._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0CJMN3443"),
+    affiliateLink: 'https://www.amazon.com/SMI100-AC-Hardwire-Interconnect-Battery-Backup/dp/B0CJMN3443?th=1&linkCode=ll2&tag=aptairsense-20&linkId=bc80b5abd846eae0895ccf7042720276&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Hardwired Interconnect Smoke Alarm",
     pros: [
       "Hardwired with battery backup for reliable continuous protection",
@@ -361,7 +363,7 @@ export const products: Product[] = [
     rank: 3,
     asin: "B01MR7KVT3",
     imageUrl: "https://m.media-amazon.com/images/I/51oj9xhsq2L._AC_SL1000_.jpg",
-    affiliateLink: mkLink("B01MR7KVT3"),
+    affiliateLink: 'https://www.amazon.com/Kidde-Detector-Long-Life-Lithium-Battery/dp/B01MR7KVT3?th=1&linkCode=ll2&tag=aptairsense-20&linkId=de741b192961fef2bccdf0acd2499184&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Photoelectric Long-Life Battery Alarm",
     pros: [
       "Photoelectric sensor reduces nuisance alarms near kitchens",
@@ -381,7 +383,7 @@ export const products: Product[] = [
     rank: 4,
     asin: "B0FP3F4GJS",
     imageUrl: "https://m.media-amazon.com/images/I/61IXXfWDMmL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0FP3F4GJS"),
+    affiliateLink: 'https://www.amazon.com/Kidde-Real-Time-Notifications-Wire-Free-Interconnectivity/dp/B0FP3F4GJS?th=1&linkCode=ll2&tag=aptairsense-20&linkId=b461b04854a3f27dd45707851013720c&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Smart Interconnected Smoke Alarm",
     pros: [
       "Ring app integration delivers real-time push alerts to your phone",
@@ -401,7 +403,7 @@ export const products: Product[] = [
     rank: 5,
     asin: "B0FFVNVG4M",
     imageUrl: "https://m.media-amazon.com/images/I/61W88grZmCL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0FFVNVG4M"),
+    affiliateLink: 'https://www.amazon.com/Kidde-Hardwired-Detector-Interconnectable-Notification/dp/B0FFVNVG4M?th=1&linkCode=ll2&tag=aptairsense-20&linkId=44133ab7fe06a2db41497665498e3811&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Hardwired 3-Pack with 10-Year Backup",
     pros: [
       "10-year sealed battery backup for decade-long power outage protection",
@@ -421,7 +423,7 @@ export const products: Product[] = [
     rank: 6,
     asin: "B07B4CGQLT",
     imageUrl: "https://m.media-amazon.com/images/I/71P8xUZFBFL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B07B4CGQLT"),
+    affiliateLink: 'https://www.amazon.com/First-Alert-9120Bff-6-Smoke-Detectors/dp/B07B4CGQLT?&linkCode=ll2&tag=aptairsense-20&linkId=7cde012ab239505549fa8be7405227d6&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Value Multi-Pack Hardwired Alarm",
     pros: [
       "6-pack economy pricing for whole-home coverage",
@@ -442,7 +444,7 @@ export const products: Product[] = [
     rank: 7,
     asin: "B00O8MVW3U",
     imageUrl: "https://m.media-amazon.com/images/I/71FMyNMOalL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B00O8MVW3U"),
+    affiliateLink: 'https://www.amazon.com/First-9120B-Hardwired-Detector-1-Pack/dp/B00O8MVW3U?&linkCode=ll2&tag=aptairsense-20&linkId=dac02e82a6769c0ee93493f9075a987b&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Single Hardwired Replacement Alarm",
     pros: [
       "Industry-proven hardwired design with battery backup",
@@ -464,7 +466,7 @@ export const products: Product[] = [
     rank: 1,
     asin: "B07N6KTC5V",
     imageUrl: "https://m.media-amazon.com/images/I/71f5j4o8RyL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B07N6KTC5V"),
+    affiliateLink: 'https://www.amazon.com/AmazonBasics-Window-Mounted-Conditioner-Mechanical-Control/dp/B07N6KTC5V?th=1&linkCode=ll2&tag=aptairsense-20&linkId=04125ff3ed18eb3ec588a435dc872a6b&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Budget Window AC for Small Rooms",
     pros: [
       "5000 BTU cools rooms up to 150 sq ft efficiently",
@@ -485,7 +487,7 @@ export const products: Product[] = [
     rank: 2,
     asin: "B085797ZFF",
     imageUrl: "https://m.media-amazon.com/images/I/61vWLeENnTL._AC_SL1000_.jpg",
-    affiliateLink: mkLink("B085797ZFF"),
+    affiliateLink: 'https://www.amazon.com/Midea-EasyCool-Conditioner-Fan-Cools-Mechanical/dp/B085797ZFF?th=1&linkCode=ll2&tag=aptairsense-20&linkId=429f3c3f5a9956c1787fe8c7bc05abba&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Easy-Install Window AC",
     pros: [
       "EasyCool installation kit simplifies window setup for renters",
@@ -506,7 +508,7 @@ export const products: Product[] = [
     rank: 3,
     asin: "B0DKRQSWG2",
     imageUrl: "https://m.media-amazon.com/images/I/71xSAtCj4SL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0DKRQSWG2"),
+    affiliateLink: 'https://www.amazon.com/GE-AWAS05BBA-Conditioner-Adjustable-Settings/dp/B0DKRQSWG2?th=1&linkCode=ll2&tag=aptairsense-20&linkId=f8622f6429b8e15bb2d78c2b75c3088d&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Modern Aesthetic Window AC",
     pros: [
       "Sleek black finish complements modern apartment decor",
@@ -526,7 +528,7 @@ export const products: Product[] = [
     rank: 4,
     asin: "B0F24DS2WV",
     imageUrl: "https://m.media-amazon.com/images/I/71JWHxaZReL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0F24DS2WV"),
+    affiliateLink: 'https://www.amazon.com/EUHOMY-Portable-Conditioners-Bedroom-Apartments/dp/B0F24DS2WV?th=1&linkCode=ll2&tag=aptairsense-20&linkId=7964e68d8aedef35abf0fe86ae9777dd&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best No-Permanent-Install Portable AC",
     pros: [
       "No permanent window modification — ideal for renters with restrictions",
@@ -546,7 +548,7 @@ export const products: Product[] = [
     rank: 5,
     asin: "B07HR5CN7G",
     imageUrl: "https://m.media-amazon.com/images/I/619DpH-8ndL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B07HR5CN7G"),
+    affiliateLink: 'https://www.amazon.com/Shinco-10000-Portable-Conditioners-SPF1-08C/dp/B07HR5CN7G?th=1&linkCode=ll2&tag=aptairsense-20&linkId=cdfa2823f011533de7e0b7709ca82572&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Portable AC for Rental Apartments",
     pros: [
       "No permanent installation — keeps rental agreements intact",
@@ -567,7 +569,7 @@ export const products: Product[] = [
     rank: 6,
     asin: "B07RGM11L5",
     imageUrl: "https://m.media-amazon.com/images/I/81Aa2gcPQTL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B07RGM11L5"),
+    affiliateLink: 'https://www.amazon.com/FRIGIDAIRE-Window-Mounted-Mini-Compact-Conditioner-Mechanical/dp/B07RGM11L5?&linkCode=ll2&tag=aptairsense-20&linkId=118aea13b84fc3bf13d9f229de89d86a&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Quiet Bedroom Window AC",
     pros: [
       "Quiet operation with a low noise rating suited for bedrooms",
@@ -587,7 +589,7 @@ export const products: Product[] = [
     rank: 7,
     asin: "B09QH3VC1F",
     imageUrl: "https://m.media-amazon.com/images/I/61QeLM+yOvL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B09QH3VC1F"),
+    affiliateLink: 'https://www.amazon.com/Ontel-Evaporative-Lightweight-Oscillating-Hydro-Chill/dp/B09QH3VC1F?th=1&linkCode=ll2&tag=aptairsense-20&linkId=bbfbf223dfe92e27dd719b750ff1235a&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Personal Evaporative Cooler",
     pros: [
       "No installation required — plugs into any USB port or outlet",
@@ -609,7 +611,7 @@ export const products: Product[] = [
     rank: 1,
     asin: "B07VVK39F7",
     imageUrl: "https://m.media-amazon.com/images/I/71t-9BTIg9L._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B07VVK39F7"),
+    affiliateLink: 'https://www.amazon.com/LEVOIT-Purifier-Home-Allergies-Pets/dp/B07VVK39F7?th=1&linkCode=ll2&tag=aptairsense-20&linkId=a42943b912f09fb9c2120f627ba4df10&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best HEPA Air Purifier for Bedrooms",
     pros: [
       "True HEPA filter captures 99.97% of particles 0.3 microns and larger",
@@ -630,7 +632,7 @@ export const products: Product[] = [
     rank: 2,
     asin: "B08FJ678YK",
     imageUrl: "https://m.media-amazon.com/images/I/61YVFzh9kLL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B08FJ678YK"),
+    affiliateLink: 'https://www.amazon.com/LEVOIT-Purifier-Allergies-Core-200S/dp/B08FJ678YK?th=1&linkCode=ll2&tag=aptairsense-20&linkId=c28e9f08ab669a3541efbb93e53ba669&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Smart HEPA Purifier with Voice Control",
     pros: [
       "Alexa and Google Home voice control via VeSync app",
@@ -651,7 +653,7 @@ export const products: Product[] = [
     rank: 3,
     asin: "B09GTRVJQM",
     imageUrl: "https://m.media-amazon.com/images/I/71wGv7Fh2AL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B09GTRVJQM"),
+    affiliateLink: 'https://www.amazon.com/LEVOIT-Purifiers-Freshener-Core-Mini/dp/B09GTRVJQM?th=1&linkCode=ll2&tag=aptairsense-20&linkId=d619141cd9d14433219a76b49d9ff5ea&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Desktop Mini Air Purifier",
     pros: [
       "Ultra-compact footprint ideal for desks and small personal spaces",
@@ -671,7 +673,7 @@ export const products: Product[] = [
     rank: 4,
     asin: "B0DY4S3HP2",
     imageUrl: "https://m.media-amazon.com/images/I/61ILVPCouhL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0DY4S3HP2"),
+    affiliateLink: 'https://www.amazon.com/Purifiers-Filter-Compact-Cleaner-360%C2%B0Intake/dp/B0DY4S3HP2?&linkCode=ll2&tag=aptairsense-20&linkId=3de3b915ef8e98b42b86aeae5c6070b3&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Large-Coverage Budget HEPA Purifier",
     pros: [
       "360° intake design for efficient whole-room filtration",
@@ -691,7 +693,7 @@ export const products: Product[] = [
     rank: 5,
     asin: "B0F9NVWBMC",
     imageUrl: "https://m.media-amazon.com/images/I/717NlSecSKL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0F9NVWBMC"),
+    affiliateLink: 'https://www.amazon.com/PuroAir-130i-HEPA-Purifiers-Home/dp/B0F9NVWBMC?th=1&linkCode=ll2&tag=aptairsense-20&linkId=abdd858f73fa56b20e6da25f0e888a57&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Smart HEPA 2-Pack for Multi-Room Coverage",
     pros: [
       "HEPA + CarbonTech dual filtration captures particles and odors simultaneously",
@@ -711,7 +713,7 @@ export const products: Product[] = [
     rank: 6,
     asin: "B0FNDG2TNK",
     imageUrl: "https://m.media-amazon.com/images/I/71eM07+OB6L._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0FNDG2TNK"),
+    affiliateLink: 'https://www.amazon.com/KNKA-Purifier-Pre-Filter-Allergies-APH4000/dp/B0FNDG2TNK?th=1&linkCode=ll2&tag=aptairsense-20&linkId=b69196a8f4eb80a8ccb6dbd46e92e8af&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best HEPA Purifier with AQI Display",
     pros: [
       "Real-time AQI display shows current air quality conditions at a glance",
@@ -732,7 +734,7 @@ export const products: Product[] = [
     rank: 7,
     asin: "B0BGPF71Q6",
     imageUrl: "https://m.media-amazon.com/images/I/71zfD5vuHwL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0BGPF71Q6"),
+    affiliateLink: 'https://www.amazon.com/LEVOIT-Purifiers-Washable-Filters-Quality/dp/B0BGPF71Q6?th=1&linkCode=ll2&tag=aptairsense-20&linkId=a4d9d9b08dd792c4029253a3f8ef43cc&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Large-Room Smart HEPA Purifier",
     pros: [
       "Built-in air quality monitor with real-time AQI feedback",
@@ -754,7 +756,7 @@ export const products: Product[] = [
     rank: 1,
     asin: "B0CQLD3TXR",
     imageUrl: "https://m.media-amazon.com/images/I/71v5iabWY8L._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0CQLD3TXR"),
+    affiliateLink: 'https://www.amazon.com/ThermoPro-TP50-Digital-Thermometer-Temperature/dp/B0CQLD3TXR?th=1&linkCode=ll2&tag=aptairsense-20&linkId=75912d0d94393e8f10ebf25a8cc2021b&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Bluetooth Hygrometer with Data Export",
     pros: [
       "Bluetooth connectivity up to 260 ft for wireless data logging",
@@ -775,7 +777,7 @@ export const products: Product[] = [
     rank: 2,
     asin: "B0CXHV22GD",
     imageUrl: "https://m.media-amazon.com/images/I/71L+WnBKEIL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B0CXHV22GD"),
+    affiliateLink: 'https://www.amazon.com/Hygrometer-Thermometer-Humidity-Greenhouse-Fahrenheit/dp/B0CXHV22GD?th=1&linkCode=ll2&tag=aptairsense-20&linkId=16796d6cf9a04a4aff70fb52a8bb20c5&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Budget 2-Pack Hygrometer",
     pros: [
       "2-pack value for monitoring multiple rooms simultaneously",
@@ -796,7 +798,7 @@ export const products: Product[] = [
     rank: 3,
     asin: "B0BQ6P8JLD",
     imageUrl: "https://m.media-amazon.com/images/I/61gZUtc3n9L._SL1137_.jpg",
-    affiliateLink: mkLink("B0BQ6P8JLD"),
+    affiliateLink: 'https://www.amazon.com/Govee-Hygrometer-Thermometer-Temperature-Notification/dp/B0BQ6P8JLD?th=1&linkCode=ll2&tag=aptairsense-20&linkId=e4a1603510dbd52e069749ed35c0784b&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Multi-Room Bluetooth 3-Pack",
     pros: [
       "3-pack enables comprehensive multi-room humidity tracking",
@@ -816,7 +818,7 @@ export const products: Product[] = [
     rank: 4,
     asin: "B07GR65CNT",
     imageUrl: "https://m.media-amazon.com/images/I/51wl4sOPhuL._SL1000_.jpg",
-    affiliateLink: mkLink("B07GR65CNT"),
+    affiliateLink: 'https://www.amazon.com/JEDEW-Hygrometer-Thermometer-Humidifiers-Dehumidifiers/dp/B07GR65CNT?th=1&linkCode=ll2&tag=aptairsense-20&linkId=93ad3f2f7a1abb7e8975afe1e451c3da&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best 2-Pack for Indoor/Outdoor Use",
     pros: [
       "Suitable for both indoor and outdoor deployment",
@@ -836,7 +838,7 @@ export const products: Product[] = [
     rank: 5,
     asin: "B09N92NRYN",
     imageUrl: "https://m.media-amazon.com/images/I/711Wkm9WMxL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B09N92NRYN"),
+    affiliateLink: 'https://www.amazon.com/Humidity-Thermometer-Hygrometer-Temperature-Greenhouse/dp/B09N92NRYN?th=1&linkCode=ll2&tag=aptairsense-20&linkId=b4895980225ec14c4e5d6d8a57b6f8d9&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Simple 2-Pack Room Monitor",
     pros: [
       "Dual-pack for affordable two-room coverage",
@@ -857,7 +859,7 @@ export const products: Product[] = [
     rank: 6,
     asin: "B09NL17MBR",
     imageUrl: "https://m.media-amazon.com/images/I/71+YjH97AtL._AC_SL1500_.jpg",
-    affiliateLink: mkLink("B09NL17MBR"),
+    affiliateLink: 'https://www.amazon.com/ThermoPro-Hygrometer-Thermometer-Humidity-Temperature/dp/B09NL17MBR?th=1&linkCode=ll2&tag=aptairsense-20&linkId=a4453b57722f3b13d401b5fcf9012641&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Mini 3-Pack Hygrometer Set",
     pros: [
       "3-piece set provides comprehensive apartment-wide coverage",
@@ -877,7 +879,7 @@ export const products: Product[] = [
     rank: 7,
     asin: "B0CN2VDPCW",
     imageUrl: "https://m.media-amazon.com/images/I/71fLkNJ3rPL._SL1500_.jpg",
-    affiliateLink: mkLink("B0CN2VDPCW"),
+    affiliateLink: 'https://www.amazon.com/Ayawiss-Thermometer-Hygrometer-Temperature-Greenhouse/dp/B0CN2VDPCW?th=1&linkCode=ll2&tag=aptairsense-20&linkId=3cfc4d381801d08edec545902c522e88&language=en_US&ref_=as_li_ss_tl',
     bestFor: "Best Single Hygrometer with Batteries Included",
     pros: [
       "AAA batteries included — ready to use immediately out of the box",

@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "AptAirSense",
   domain: "aptairsense.com",
-  affiliateTag: "YOURTAG-20",
+  affiliateTag: "aptairsense-20",
   email: "info@aptairsense.com",
   description: "Independent reviews of air quality monitors, CO detectors, dehumidifiers, air purifiers, and humidity sensors for apartments and small spaces.",
   meta: {
