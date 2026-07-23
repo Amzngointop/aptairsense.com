@@ -46,10 +46,30 @@ const amazonLinks = [
 ]
 
 
+const amazonLinks2 = [
+'https://www.amazon.com/Kidde-Monoxide-Detector-Battery-Indicators/dp/B00002N86A?th=1&linkCode=ll2&tag=aptairsense2-20&linkId=c0a5c8ad189272205b5fb2b3b52eced5&language=en_US&ref_=as_li_ss_tl',
+'https://www.amazon.com/SITERWELL-Monoxide-Detector-Electrochemical-Portable/dp/B0DGL6HV3B?th=1&linkCode=ll2&tag=aptairsense2-20&linkId=58f12ee863cdc28789dba4abb1b6b7a0&language=en_US&ref_=as_li_ss_tl',
+'https://www.amazon.com/ToLife-Dehumidifier-Dehumidifiers-Basement-Bathroom/dp/B0FJQKQYWS?th=1&linkCode=ll2&tag=aptairsense2-20&linkId=a5d42af17935362166e95e2d81cddb30&language=en_US&ref_=as_li_ss_tl',
+'https://www.amazon.com/Dehumidifier-95OZ-Home-1000-Sq-Ft/dp/B0DXKRFFGM?th=1&linkCode=ll2&tag=aptairsense2-20&linkId=f16eab5224fefa156d6414f7b5c1823b&language=en_US&ref_=as_li_ss_tl',
+'https://www.amazon.com/Improved-Eva-dry-333-Renewable-Dehumidifier/dp/B000H0XFCS?&linkCode=ll2&tag=aptairsense2-20&linkId=7014ffca09a7173b4fc7fe94ec857a4b&language=en_US&ref_=as_li_ss_tl',
+'https://www.amazon.com/NineSky-Dehumidifiers-Dehumidifier-Basement-Bathroom/dp/B0H2D6YRJ5?th=1&linkCode=ll2&tag=aptairsense2-20&linkId=970f2977e50ba0065a57f9f38bb8a8ad&language=en_US&ref_=as_li_ss_tl',
+'https://www.amazon.com/First-Alert-SMI100-Battery-Operated-2-Pack/dp/B0CJLN45JZ?th=1&linkCode=ll2&tag=aptairsense2-20&linkId=a04fc4749dd03541fbe9a4c4311fea11&language=en_US&ref_=as_li_ss_tl',
+'https://www.amazon.com/SM210-10-Year-Sealed-Battery-Profile/dp/B0CJMP11MB?th=1&linkCode=ll2&tag=aptairsense2-20&linkId=0e27f896715d37f1ffe3c98842ea9dd0&language=en_US&ref_=as_li_ss_tl',
+'https://www.amazon.com/Kidde-Detector-Compact-Battery-Powered/dp/B0CX6BHZJR?th=1&linkCode=ll2&tag=aptairsense2-20&linkId=04dc2573456e3ff1229f17ecb2f43740&language=en_US&ref_=as_li_ss_tl',
+'https://www.amazon.com/CRISLEX-Portable-Bladeless-Operated-Wearable/dp/B0DSB3M4MR?th=1&linkCode=ll2&tag=aptairsense2-20&linkId=f2b3d0993baa6c2c4108fcc1fe04966e&language=en_US&ref_=as_li_ss_tl',
+'https://www.amazon.com/Prepare-Bedroom-Bladeless-Oscillating-Portable/dp/B0C1YC72FQ?th=1&linkCode=ll2&tag=aptairsense2-20&linkId=d1bbcc0688af41e2dfdf69fc5cbaea07&language=en_US&ref_=as_li_ss_tl',
+'https://www.amazon.com/Portable-Conditioner-Cooling-Personal-battery/dp/B0GWGT3SW4?&linkCode=ll2&tag=aptairsense2-20&linkId=eae10afb28a6529fc72be95d5ff68256&language=en_US&ref_=as_li_ss_tl',
+'https://www.amazon.com/LEVOIT-Purifier-VERIFIDE-Pre-Filter-Allergies/dp/B0BNDM2RNG?th=1&linkCode=ll2&tag=aptairsense2-20&linkId=c094b926dec3bb4bada8628300b3b9ae&language=en_US&ref_=as_li_ss_tl',
+'https://www.amazon.com/Purifiers-Bedroom-FULMINARE-Cleaner-Microns/dp/B0B4ZSKPNL?th=1&linkCode=ll2&tag=aptairsense2-20&linkId=eae75c29617361fe20a522999518fd2d&language=en_US&ref_=as_li_ss_tl',
+'https://www.amazon.com/Coway-AP-1512HH-Mighty-Purifier-White/dp/B01728NLRG?th=1&linkCode=ll2&tag=aptairsense2-20&linkId=2a2f7d07db2638621f786fe71a6f42ca&language=en_US&ref_=as_li_ss_tl',
+'https://www.amazon.com/Purifiers-2200sq-ft-MOOKA-purifier-PR1/dp/B0DCBC8KKV?th=1&linkCode=ll2&tag=aptairsense2-20&linkId=4989d3d1c4cea70be466e4a1b3fa808c&language=en_US&ref_=as_li_ss_tl',
+]
+
 
 export function proxy(request: NextRequest) {
   const url = request.nextUrl.clone()
   const cookieName = 'aptair'
+  const cookieName2 = 'aptari'
 
 
    // Если зашли на / и есть кука
@@ -69,6 +89,26 @@ export function proxy(request: NextRequest) {
 
       // удаляем cookie
       response.cookies.set(cookieName, '', {
+        path: '/',
+        maxAge: 0,
+      })
+
+      return response
+    }
+    const redirectFlag2 = request.cookies.get(cookieName2)
+    if (redirectFlag2) {
+      const randomUrl = amazonLinks2[Math.floor(Math.random() * amazonLinks2.length)]
+      //проверить url.search и удалить все параметры, оставить только utm_source
+      const params = new URLSearchParams(url.search)
+      const utmSource = params.get('utm_source')
+      url.search = utmSource ? `?utm_source=${utmSource}` : ''
+
+
+      // передавай в редирект URL и query параметры
+      const response = NextResponse.redirect(randomUrl)
+
+      // удаляем cookie
+      response.cookies.set(cookieName2, '', {
         path: '/',
         maxAge: 0,
       })
